@@ -1,0 +1,8 @@
+.borda {
+  border: 10px solid;
+  border-color: rgb(20, 112, 139);
+}
+.bordaApp{
+  border: 10px solid;
+  border-color: rgb(189, 202, 206);
+}

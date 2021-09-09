@@ -1,0 +1,27 @@
+<h2 class="text-center">Entrar</h2>
+<h6 class="text-center">email=1,senha=1</h6>
+
+<form (ngSubmit)="onSugmit(f)" #f="ngForm" >
+  <div class="form-group">
+    <label for="">email</label>
+    <input
+      type="email"
+      class="form-control"
+      name="email" id="email"
+      [(ngModel)]="login.email"
+      required/>
+  </div>
+  <div class="form-group">
+    <label for="">senha</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      id="password"
+      [(ngModel)]="login.password"
+      required/>
+  </div>
+  <h6 class="text-center" [hidden]="!falha">Credenciais inválidas</h6>
+  <button type="submit" class="btn btn-primary btn-block" [disabled]="f.form.invalid">Entrar</button>
+  <button type="button" class="btn btn-link btn-block" [routerLink]="['/acc','create']">Registar</button>
+</form>

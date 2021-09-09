@@ -1,0 +1,12 @@
+<div class="borda">
+    <div style="text-align:left" class="content">
+        <h4>
+            {{title}}!
+        </h4>
+    </div>
+    <ul>
+        <li *ngFor="let link of links">
+            <a [routerLink]="[link.uri]">{{ link.name }}</a>
+        </li>
+    </ul>
+</div>

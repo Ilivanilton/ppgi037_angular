@@ -1,0 +1,57 @@
+{
+  "clientes": [
+    {
+      "id": 11,
+      "name": "Bombasto"
+    },
+    {
+      "id": 12,
+      "name": "Narco"
+    },
+    {
+      "id": 13,
+      "name": "CeleritasSSSS"
+    },
+    {
+      "id": 14,
+      "name": "Dynama"
+    },
+    {
+      "name": "Magma",
+      "id": 15
+    },
+    {
+      "name": "dfdsdf",
+      "id": 16
+    }
+  ],
+  "produtos": [
+    {
+      "id": 11,
+      "name": "Bombom",
+      "price": 0.8
+    },
+    {
+      "id": 12,
+      "name": "Coxinha",
+      "price": 3.5
+    },
+    {
+      "price": "2,3",
+      "name": "pernil",
+      "id": 13
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 11,
+      "clienteId": 11,
+      "total": 80.8
+    },
+    {
+      "id": 12,
+      "clienteId": 12,
+      "total": 10.8
+    }
+  ]
+}

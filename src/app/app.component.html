@@ -1,0 +1,5 @@
+<div class="bordaApp">
+  <app-header *ngIf="autenticado" [title]="namePorject"></app-header>
+  <div class="borda"><router-outlet></router-outlet></div>
+  <app-footer *ngIf="autenticado" ></app-footer>
+</div>

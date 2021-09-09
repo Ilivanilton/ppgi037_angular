@@ -1,0 +1,34 @@
+<h2 class="text-center">Registar</h2>
+
+<form (ngSubmit)="onSubmit()" #f="ngForm" >
+  <div class="form-group">
+    <label for="">nome</label>
+    <input
+      type="text"
+      class="form-control"
+      name="name" id="name"
+      [(ngModel)]="acc.name"
+      required/>
+  </div>
+  <div class="form-group">
+    <label for="">email</label>
+    <input
+      type="email"
+      class="form-control"
+      name="email" id="email"
+      [(ngModel)]="acc.email"
+      required/>
+  </div>
+  <div class="form-group">
+    <label for="">senha</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      id="password"
+      [(ngModel)]="acc.password"
+      required/>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block" [disabled]="f.form.invalid">Registar</button>
+  <button type="button" class="btn btn-link btn-block" [routerLink]="['/acc','login']" >Entrar</button>
+</form>
